@@ -1,0 +1,80 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <title>CSS Case_06</title>
+
+    <style>
+      section {
+        width: 80vw;
+        height: 80vh;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        border: 2px solid blue;
+      }
+
+      section > div {
+        border: 2px solid blue;
+      }
+
+      section > div:first-child {
+        background: url("assert/1.jpg");
+        background-size: cover;
+      }
+
+      section > div:nth-child(2) {
+        background: url("assert/2.jpg");
+        background-size: cover;
+      }
+
+      section > div:nth-child(3) {
+        background: url("assert/3.jpg");
+        background-size: cover;
+      }
+
+      section > div:nth-child(4) {
+        background: url("assert/4.jpg");
+        background-size: cover;
+      }
+
+      section > div:nth-child(5) {
+        background: url("assert/5.jpg");
+        background-size: cover;
+      }
+
+      section > div:nth-child(6) {
+        background: url("assert/6.jpg");
+        background-size: cover;
+      }
+
+      section > div:nth-child(7) {
+        background: url("assert/7.jpg");
+        background-size: cover;
+      }
+      section > div:nth-child(8) {
+        grid-column: 2/4;
+        grid-row: 3/4;
+        background: url("assert/8.jpg");
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+  </body>
+</html>
