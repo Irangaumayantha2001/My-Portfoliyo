@@ -76,5 +76,12 @@ header ul li:hover a, header ul li:hover {
 /* end header Area */
 
 /* start Banner Area */
-
+.site-banner .banner-text{
+    z-index: 2;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    font-size: 30px;
+    align-content: center;
+}
 /* end banner Area */
