@@ -96,6 +96,13 @@ header ul li:hover a, header ul li:hover {
     font-family: 'Lobster', cursive;
 }
 
+.banner-text .animated-info{
+    font-size: 50px;
+    color: #3A86FF;
+    font-weight: 800;
+}
+
+
 
 
 /* end banner Area */
