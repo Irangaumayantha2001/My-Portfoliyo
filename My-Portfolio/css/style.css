@@ -35,3 +35,10 @@ header li{
     margin-left: 20px;
     list-style: none;
 }
+
+header ul{
+    position: absolute;
+    right: 88px;
+    top: 0;
+    font-size: 25px;
+}
