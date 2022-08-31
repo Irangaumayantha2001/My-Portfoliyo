@@ -14,6 +14,9 @@ body {
 
 body.active { overflow: hidden; }
 
+
+
+/* start header Area */
 .navbar{
     display: flex;
     flex-direction: row;
@@ -70,3 +73,8 @@ header ul li:hover a, header ul li:hover {
 
 }
 
+/* end header Area */
+
+/* start Banner Area */
+
+/* end banner Area */
