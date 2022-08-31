@@ -1,2 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+*{
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    background:white;
+}
+
+body.active { overflow: hidden; }
+
