@@ -91,4 +91,11 @@ header ul li:hover a, header ul li:hover {
     top: 100px;
     margin: auto;
 }
+
+.banner-text h1{
+    font-family: 'Lobster', cursive;
+}
+
+
+
 /* end banner Area */
