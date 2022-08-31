@@ -108,5 +108,11 @@ header ul li:hover a, header ul li:hover {
 .site-about{
     display: inline-block;
 }
+.about-img{
+    position:absolute;
+    left: 200px;
+}
+
+
 
 /* end about Area */
