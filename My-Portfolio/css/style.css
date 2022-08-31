@@ -84,4 +84,11 @@ header ul li:hover a, header ul li:hover {
     font-size: 30px;
     align-content: center;
 }
+
+.site-banner .banner-img{
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    margin: auto;
+}
 /* end banner Area */
