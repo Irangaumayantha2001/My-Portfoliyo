@@ -29,3 +29,9 @@ body.active { overflow: hidden; }
     top:0;
 
 }
+
+header li{
+    display: inline-block;
+    margin-left: 20px;
+    list-style: none;
+}
