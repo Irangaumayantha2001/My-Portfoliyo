@@ -113,6 +113,23 @@ header ul li:hover a, header ul li:hover {
     left: 200px;
 }
 
+.about-text h2{
+    display: block;
+    font-size: 60px;
+    letter-spacing: 21px;
+}
+
+.about-text .text-uppercase{
+    padding-top: 20px;
+    padding-left: 900px;
+    font-size: 55px;
+}
+.about-text .para {
+    padding-left: 900px;
+    padding-top: 5px;
+    font-size: 30px;
+    font-weight: 700;
+}
 
 
 /* end about Area */
