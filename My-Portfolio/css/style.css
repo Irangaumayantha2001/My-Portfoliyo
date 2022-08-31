@@ -130,6 +130,16 @@ header ul li:hover a, header ul li:hover {
     font-size: 30px;
     font-weight: 700;
 }
+.about-btn .btn{
+    width: 196px;
+    height: 56px;
+    margin-left: 900px;
+    border-radius: 8px;
+    background-color: #3A86FF;
+    color: white;
+    border: none;
+    box-shadow:10px 1px 7px 4px rgb(124, 120, 120)
+}
 
 
 /* end about Area */
