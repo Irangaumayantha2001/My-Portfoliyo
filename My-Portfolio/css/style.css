@@ -14,3 +14,18 @@ body {
 
 body.active { overflow: hidden; }
 
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    background: white;
+    box-shadow: 10px 1px 7px 4px rgb(124, 120, 120);
+    z-index: 3;
+    height: 60px;
+    top:0;
+
+}
