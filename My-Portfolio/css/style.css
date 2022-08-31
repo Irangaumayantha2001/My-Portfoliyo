@@ -57,3 +57,8 @@ header ul{
     background-color: #3A86FF;
 
 }
+
+header ul li:hover a, header ul li:hover {
+    cursor: pointer;
+    color: #3A86FF;
+}
