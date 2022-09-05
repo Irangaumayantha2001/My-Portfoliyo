@@ -1,0 +1,69 @@
+/*!
+ * @author : Pasan Pahasara
+ * @since : 0.1.0
+ **/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/**
+* added background color
+*/
+body {
+    background-color: #174CE2;
+}
+
+/**
+* added position, size and section background color
+*/
+section {
+    width: 300px;
+    height: 300px;
+    background-color: grey;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/**
+* added h1 and customized it
+*/
+section > h1 {
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    width: max-content;
+    height: max-content;
+    font-size: 30px;
+    z-index: 10;
+}
+
+section::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border: 20px solid white;
+    border-top: 20px solid red;
+    border-radius: 100%;
+}
+
+section:hover::after {
+    transform: rotate(360deg);
+    transition: all 2s;
+    cursor: pointer;
+}
+
+section > h1:hover {
+    cursor: pointer;
+}

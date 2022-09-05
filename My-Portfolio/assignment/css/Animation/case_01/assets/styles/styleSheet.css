@@ -1,0 +1,62 @@
+/*!
+ * @author : Pasan Pahasara
+ * @since : 0.1.0
+ **/
+
+/**
+ * customized scrollbar
+ */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/**
+ * customized section and introducing animation.
+ */
+section{
+    position: absolute;
+    background-color: blue;
+    border-radius: 10%;
+    width: 200px;
+    height: 100px;
+    animation-name: animation_1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/**
+ * introducing animations keyframes.
+ */
+@keyframes animation_1 {
+    0% {
+        top: 0;
+        left: 0;
+        background-color: #0010FF;
+        transform: rotate(0deg);
+    }
+    25% {
+        top: 0;
+        left: 1440px;
+        background-color: #F9E800;
+        transform: rotate(180deg);
+    }
+    50% {
+        top: 690px;
+        left: 1440px;
+        background-color: #D11A00;
+        transform: rotate(360deg);
+    }
+    75% {
+        top: 690px;
+        left: 0;
+        background-color: #C7266D;
+        transform: rotate(180deg);
+    }
+    100% {
+        top: 0;
+        left: 0;
+        background-color: #FF6800;
+        transform: rotate(360deg);
+    }
+}
