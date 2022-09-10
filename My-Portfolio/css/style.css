@@ -93,6 +93,9 @@ header ul li:hover a, header ul li:hover {
 /* end header Area */
 
 /* start Banner Area */
+#Home{
+    width: 100%;
+}
 .site-banner .banner-text{
     z-index: 2;
     position: absolute;
@@ -109,14 +112,30 @@ header ul li:hover a, header ul li:hover {
     margin: auto;
 }
 
+.titel-text{
+    margin-top: 40px;
+    font-size: 70px;
+    font-weight: 900;
+}
+
 .banner-text h1{
-    font-family: 'Lobster', cursive;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 80px;
+
+}
+
+.main-content{
+    color: #3A86FF;
 }
 
 .banner-text .animated-info{
-    font-size: 50px;
-    color: #3A86FF;
+    font-size: 35px;
     font-weight: 800;
+}
+
+.social-icon{
+    margin-top: 30px;
 }
 
 /* end banner Area */
