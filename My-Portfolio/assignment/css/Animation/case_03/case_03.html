@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case_03</title>
+    <style>
+
+        main{
+            width: 800px;
+            height: 500px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            overflow: hidden;
+            border: 5px solid ghostwhite;
+        }
+        main>section{
+            width: 500%;
+            height: 100%;
+            display: flex;
+            animation-name: imageslide;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        main>section>div{
+            width: 100%;
+        }
+        section>div:nth-child(1){
+            background: url("assets/images/1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        section>div:nth-child(2){
+            background: url("assets/images/2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        section>div:nth-child(3){
+            background: url("assets/images/3.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        section>div:nth-child(4){
+            background: url("assets/images/4.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        section>div:nth-child(5){
+            background: url("assets/images/5.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes imageslide {
+            0%,15%{
+                transform: translateX(0);
+            }
+            20%,35%{
+                transform: translateX(-20%);
+            }
+            40%,55%{
+                transform: translateX(-40%);
+            }
+            60%,75%{
+                transform: translateX(-60%);
+            }
+            80%,100%{
+                transform: translateX(-80%);
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+</body>
+</html>
