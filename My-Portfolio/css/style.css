@@ -496,4 +496,63 @@ button:hover
 /* End contact Area */
 
 /* Start footer Area */
+#footer{
+    width: 100%;
+    min-height: 300px;
+    background-color: #3A86FF;
+    margin-top: 10px;
+    clear: both;
+}
+footer .footer-wrap{
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 9%;
+    color: white;
+}
+.widgetFooter{
+    width: calc(85%/3);
+    height: auto;
+    float: left;
+    padding: 2.5%;
+    text-align: left;
+}
+h4.uppercase{
+    text-transform: uppercase;
+}
+ul#footerUsefulLink, ul#footerMediaLinks{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+    text-transform: capitalize;
+}
+ul#footerUsefulLink li, ul#footerMediaLinks li{
+    cursor: pointer;
+    /* transition: border-bottom 3s ease-in; */
+}
+ul#footerUsefulLink li:hover .usefulLinksIcons, ul#footerUsefulLink li:hover a{
+    color: #00CED1;
+    /* border-bottom: 1px solid red; */
+}
+ul#footerMediaLinks li:hover span.fb, ul#footerMediaLinks li:hover a.fb { color: #ffc838; }
+ul#footerMediaLinks li:hover span.twit, ul#footerMediaLinks li:hover a.twit { color: #ffc838; }
+ul#footerMediaLinks li:hover span.insta, ul#footerMediaLinks li:hover a.insta { color: #ffc838; }
+ul#footerMediaLinks li:hover span.git, ul#footerMediaLinks li:hover a.git { color:#ffc838 ; }
+
+div#footerLogo img{
+    height: 50px;
+    width: 50px;
+    margin: 25% 0;
+}
+
+div.footerCopy{
+    clear: both;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+    border-top: 1px solid #ccc;
+}
+
+
+
 /* End footer Area */
