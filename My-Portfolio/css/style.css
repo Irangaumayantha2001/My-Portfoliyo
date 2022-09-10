@@ -272,5 +272,26 @@ header ul li:hover a, header ul li:hover {
     align-content: center;
     width: 100%;
 }
+.site-service .services{
+
+    background:#C3BEF0;
+    padding: 2rem 0;
+    width: 350px;
+    height: 350px;
+    margin:auto;
+    transition: box-shadow .7s ease;
+    box-shadow:10px 1px 7px 4px rgb(124, 120, 120)
+}
+
+.site-service .service-img {
+    text-align: center;
+}
+
+.site-service .card-title{
+
+    font-size: 40px;
+    text-align: center;
+
+}
 
 /* End service Area */
