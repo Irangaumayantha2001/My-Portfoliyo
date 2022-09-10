@@ -141,12 +141,15 @@ header ul li:hover a, header ul li:hover {
 /* end banner Area */
 
 /* start about Area */
-.site-about{
+#About{
     display: inline-block;
+    align-content: center;
+    width: 100%;
 }
+
 .about-img{
     position:absolute;
-    left: 200px;
+    left: 50px;
 }
 
 .about-text h2{
@@ -161,10 +164,10 @@ header ul li:hover a, header ul li:hover {
     font-size: 55px;
 }
 .about-text .para {
-    padding-left: 900px;
-    padding-top: 5px;
-    font-size: 30px;
-    font-weight: 700;
+    padding-left: 800px;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: justify;
 }
 .about-btn .btn{
     width: 196px;
