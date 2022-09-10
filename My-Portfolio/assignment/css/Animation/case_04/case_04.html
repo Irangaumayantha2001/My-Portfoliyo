@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <meta charset="UTF-8">
+    <title>Case_04</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        main{
+            width: 100vw;
+            height: 80vh;
+            background: url("assets/images/sky.jpg");
+            background-size: cover;
+            position: relative;
+        }
+        section{
+            width: max-content;
+            position: absolute;
+            height: 300px;
+            top: 290px;
+            animation-name: cityAnimation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        section>div{
+            display: flex;
+            width: max-content;
+            height: max-content;
+        }
+        section>div:nth-child(1){
+            height: 38vh;
+        }
+        section>div:nth-child(2){
+            height: 260px;
+            top: 200px;
+        }
+        article>img{
+            width: 380px;
+            height: 180px;
+            top:40vh;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+        }
+        aside{
+            width: max-content;
+            height: 5px;
+            top:36vh;
+            bottom: 0;
+            left: -11px;
+            right: 0;
+            margin: auto;
+            position: absolute;
+        }
+        aside>img{
+
+            animation-name: carWheel;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+            animation-direction: alternate;
+        }
+        aside>img:nth-child(1){
+            width: 75px;
+            height: 75px;
+            margin-top: 25px;
+            margin-right: 155px;
+
+        }
+        aside>img:nth-child(2){
+            width: 75px;
+            height: 75px;
+
+        }
+        @keyframes cityAnimation {
+            from{
+                margin-left: 0;
+            }
+            to{
+                margin-left: -270vw;
+            }
+        }
+        @keyframes carWheel {
+            0% {
+                transform: rotate(0deg);
+
+            }
+            50% {
+                transform: rotate(-270deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+
+</head>
+<body>
+<main></main>
+<section>
+    <div>
+        <img src="assets/images/city.png">
+        <img src="assets/images/city.png">
+        <img src="assets/images/city.png">
+        <img src="assets/images/city.png">
+    </div>
+    <div>
+        <img src="assets/images/road.jpg">
+        <img src="assets/images/road.jpg">
+    </div>
+</section>
+<article>
+    <img src="assets/images/car.png">
+</article>
+<aside>
+    <img src="assets/images/wheel.png">
+    <img src="assets/images/wheel.png">
+</aside>
+</body>
+</html>
