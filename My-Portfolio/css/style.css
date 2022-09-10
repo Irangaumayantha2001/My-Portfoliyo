@@ -296,7 +296,7 @@ header ul li:hover a, header ul li:hover {
 
 /* End service Area */
 
-/* start service Area */
+/* start project Area */
 .project-topic{
     text-align: center;
     font-size: 60px;
@@ -383,4 +383,7 @@ i:hover {
     color: #529fe9;
     cursor: pointer;
 }
+/* End project Area */
+
+/* start contact Area */
 /* End service Area */
