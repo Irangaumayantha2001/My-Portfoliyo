@@ -24,11 +24,11 @@
     background: #3A86FF;
 }
 
-body {
+body,html {
     background:white;
+    overflow-x: hidden;
 }
 
-body.active { overflow: hidden; }
 
 
 
