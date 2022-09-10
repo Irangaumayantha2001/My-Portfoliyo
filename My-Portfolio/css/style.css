@@ -266,5 +266,11 @@ header ul li:hover a, header ul li:hover {
 /* End  skill Area */
 
 /* start service Area */
+.site-service{
+    padding: 7rem 2rem;
+    display: flex;
+    align-content: center;
+    width: 100%;
+}
 
 /* End service Area */
