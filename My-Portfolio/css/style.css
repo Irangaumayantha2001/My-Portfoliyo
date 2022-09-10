@@ -184,5 +184,83 @@ header ul li:hover a, header ul li:hover {
 /* end about Area */
 
 /* start skill Area */
+.site-skill {
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.section-titel{
+
+    position: absolute;
+    font-size: 70px;
+    letter-spacing: 21px;
+    width: 50%;
+}
+
+.section-text{
+    width: 40%;
+}
+
+.skill-card {
+    position: relative;
+    background: hsl(0, 0%, 100%);
+    width: 80px;
+    height: 80px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    box-shadow: 10px 10px 40px ;
+    list-style: none;
+
+}
+
+.skills-content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.skills-content>h2{
+    /* position: absolute; */
+    left: 0;
+    margin-right: 20px;
+}
+.skills-content>p{
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+.skills-box{
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    /* grid-template-columns:repeat(5,1fr);
+    grid-template-columns:repeat(3,1fr) ; */
+}
+
+.skill-list,  .tool-list{
+    display: grid;
+    flex-wrap: wrap;
+
+    gap: 15px;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+
+.section-title{
+    display: block;
+    font-size: 60px;
+}
+
+.section-text{
+    font-size: 25px;
+    font-weight: 800;
+    text-align: left;
+    margin-top: 50px;
+}
 
 /* End  skill Area */
