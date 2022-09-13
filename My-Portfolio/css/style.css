@@ -383,6 +383,35 @@ i:hover {
     color: #529fe9;
     cursor: pointer;
 }
+
+.btn-project{
+    display: flex;
+    justify-content: center;
+
+}
+.project-btn{
+    padding:auto;
+    width: 150px;
+    height: 50px;
+    border: 1px solid;
+    border-color: #212121;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 18px;
+    background-color: black;
+    color: inherit;
+    box-shadow: 0 0 10px #212121;
+}
+.project-btn:hover
+{
+    background-color:#3A86FF;
+    color: white;
+    border-color:#3A86FF ;
+    cursor: pointer;
+}
+
+
+
 /* End project Area */
 
 /* start contact Area */
@@ -472,7 +501,7 @@ textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label
     justify-content: center;
 }
 
-button
+.contac-btn
 {
     padding: 2%;
     width: 50%;
@@ -486,7 +515,7 @@ button
     box-shadow: 0 0 10px #212121;
 }
 
-button:hover
+.contac-btn:hover
 {
     background-color:#3A86FF;
     color: white;
