@@ -1,0 +1,286 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Item Form</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="assert/Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assert/Css/Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--navigation bar-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%)"
+    >
+      <a class="navbar-brand" href="#">
+        <img
+          src="assert/shop.png"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        SHOP
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a
+              class="nav-link"
+              href="index.html"
+              style="color: blue; font-size: large; font-weight: bold"
+              ><img src="assert/DashBoard.png" /><H>DASHBOARD</H>
+              <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="customerForm.html"
+              style="font-weight: bold; font-size: large; color: blue"
+              ><img src="assert/customer.png" />CUSTOMER</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="ItemForm.html"
+              style="color: blue; font-size: large; font-weight: bold"
+              ><img src="assert/item.png" />ITEM</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="OrderForm.html"
+              style="color: blue; font-size: large; font-weight: bold"
+              ><img src="assert/order.png" />PLACE ORDER</a
+            >
+          </li>
+        </ul>
+      </div>
+      <span class="navbar-text">
+        <img
+          src="assert/user.gif"
+          alt=""
+          srcset=""
+          width="50px"
+          height="50px"
+        />
+      </span>
+    </nav>
+
+    <!--Place-->
+    <nav aria-label="breadcrumb" style="margin-top: 10px">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Item</li>
+      </ol>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card p-0 m-0" style="border: solid blue">
+            <div
+              class="card-header"
+              style="background-color: blue; color: white; font-weight: bold"
+            >
+              Search Item
+            </div>
+            <div class="card-body">
+              <form class="form-inline my-2 my-lg-0">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Input Item Name/Item ID Here"
+                  aria-label="Search"
+                  style="width: 700px; margin-bottom: 10px"
+                />
+                <button
+                  class="btn btn-outline-success my-2 my-sm-0"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="btn-group mt-2" style="float: right">
+            <button
+              type="button"
+              class="btn btn-success"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              New Item
+            </button>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div
+                    class="modal-header"
+                    style="background-color: blue; color: white"
+                  >
+                    <h5 class="modal-title" id="exampleModalLabel">New Item</h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Item Name</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail"
+                          aria-describedby="emailHelp"
+                          placeholder="Item Name"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Item Price</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          placeholder="Item Price"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Quantity</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="exampleInputPassword1"
+                          placeholder="Quantity"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div
+          style="margin-top: 50px; text-align: left; display: block"
+          class="ml-4"
+        >
+          <button id="delBuCu" type="button" class="btn btn-danger">
+            Delete
+          </button>
+          <button type="button" id="cusE" class="btn btn-warning">Edit</button>
+          <button type="button" id="cusD" class="btn btn-info">Details</button>
+          <button class="btn btn-success">Clear</button>
+        </div>
+      </div>
+
+      <!--First row-->
+      <div class="row">
+        <div class="container-fluid" style="margin-top: 50px">
+          <div class="col">
+            <table class="table table-striped table-hover">
+              <thead class="table-light sticky-top">
+                <tr>
+                  <th scope="col">Item Code</th>
+                  <th scope="col">Item Name</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Quntity</th>
+                  <th scope="col">Options</th>
+                </tr>
+              </thead>
+              <tbody class="">
+                <tr>
+                  <td>IT01</td>
+                  <td>Rice</td>
+                  <td>RS. 550/=</td>
+                  <td>10</td>
+                  <td class="d-flex justify-content-evenly">
+                    <i class="fa-solid fa-pencil fa-2x"></i>
+                    <i class="fa-solid fa-trash fa-2x"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>IT02</td>
+                  <td>soap</td>
+                  <td>RS. 230/=</td>
+                  <td>100</td>
+                  <td class="d-flex justify-content-evenly">
+                    <i class="fa-solid fa-pencil fa-2x"></i>
+                    <i class="fa-solid fa-trash fa-2x"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>IT03</td>
+                  <td>choclate</td>
+                  <td>RS. 230/=</td>
+                  <td>1000</td>
+                  <td class="d-flex justify-content-evenly">
+                    <i class="fa-solid fa-pencil fa-2x"></i>
+                    <i class="fa-solid fa-trash fa-2x"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assert/js/bootstrap.min.js"></script>
+    <script src="assert/js/jquery-3.4.1.min.js"></script>
+  </body>
+</html>
