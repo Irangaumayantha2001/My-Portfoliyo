@@ -701,6 +701,804 @@ div.footerCopy{
     border-top: 1px solid #ccc;
 }
 
-
-
 /* End footer Area */
+@media all and (min-width: 320px) and (max-width:796px)
+{
+
+    * {
+        font-size: 15px;
+    }
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* start navbar Area */
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px;
+        position: fixed;
+        background: white;
+        box-shadow: 10px 1px 7px 4px rgb(124, 120, 120);
+        z-index: 3;
+        height: 60px;
+        top:0;
+
+    }
+
+    header li{
+        display: inline-block;
+        margin-left: 20px;
+        list-style: none;
+    }
+
+    header ul{
+        position: absolute;
+        right: 88px;
+        top: 0;
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    .links:hover{
+        position: relative;
+
+    }
+    .links:hover::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0.18rem;
+        left: 0;
+        top: 2rem;
+        background-color: #3A86FF;
+
+    }
+
+    header ul li:hover a, header ul li:hover {
+        cursor: pointer;
+        color: #3A86FF;
+    }
+
+    .navbar .logo img{
+        position: relative;
+        width: 50px;
+        margin-left: 50px;
+
+    }
+
+    /* end navbar Area */
+    /* start Banner Area */
+
+    #Home{
+        width: 100%;
+    }
+
+    .site-banner .banner-text{
+        z-index: 2;
+        top: 200px;
+        left: 200px;
+        font-size: 30px;
+        align-content: center;
+    }
+
+    .site-banner .banner-img{
+
+        right: 50px;
+        top: 100px;
+        margin: auto;
+    }
+
+    .banner-img img{
+        height: 400px;
+        align-items: center;
+    }
+    .titel-text{
+        margin-top: 300px;
+        font-size: 50px;
+        font-weight: 900;
+    }
+
+    .banner-text h1{
+        margin-bottom: 20px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 40px;
+
+    }
+
+    .main-content{
+        color: #3A86FF;
+    }
+
+    .banner-text .animated-info{
+        font-size: 35px;
+        font-weight: 800;
+    }
+
+    .social-icon{
+        margin-top: 30px;
+    }
+
+    /* End Banner Area */
+
+
+    /* start about Area */
+
+    #About{
+        display: inline-block;
+        align-content: center;
+        width: 100%;
+    }
+
+
+    .about-img{
+        position:absolute;
+        left: 50px;
+    }
+
+    .about-img img{
+        height: 500px;
+        justify-content: center;
+    }
+
+    .about-text h2{
+
+        font-size: 60px;
+        letter-spacing: 21px;
+    }
+
+    .about-text{
+
+
+    }
+    .text-uppercase{
+        padding-top: 20px;
+        padding-left: 800px;
+        font-size: 55px;
+
+    }
+    .about-text .para{
+        padding-left: 800px;
+        font-size: 25px;
+        font-weight: 800;
+        text-align: justify;
+    }
+    .about-btn{
+        display: flex;
+        align-items: end;
+    }
+    .btn{
+        padding:auto;
+        width: 150px;
+        height: 50px;
+        border: 1px solid;
+        border-color: #212121;
+        border-radius: 5px;
+        font-family: inherit;
+        font-size: 18px;
+        background-color: black;
+        color: inherit;
+        box-shadow: 0 0 10px #212121;
+    }
+    .btn:hover
+    {
+        background-color:#3A86FF;
+        color: white;
+        border-color:#3A86FF ;
+        cursor: pointer;
+    }
+
+    /* End about Area */
+
+
+
+
+
+
+
+
+
+    /* start skill Area */
+    .site-skill {
+        margin-top: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .section-titel{
+
+        position: absolute;
+        font-size: 50px;
+        letter-spacing: 21px;
+        width: 20%;
+
+    }
+
+    .section-text{
+        width: 50%;
+    }
+
+    .skill-card {
+        position: relative;
+        background: hsl(0, 0%, 100%);
+        width: 80px;
+        height: 80px;
+        display: grid;
+        place-items: center;
+        border-radius: 12px;
+        box-shadow: 10px 10px 40px ;
+        list-style: none;
+
+    }
+
+    .skills-content{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .skills-content>h2{
+        /* position: absolute; */
+        left: 0;
+        margin-right: 20px;
+    }
+    .skills-content>p{
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+
+    .skills-box{
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        /* grid-template-columns:repeat(5,1fr);
+        grid-template-columns:repeat(3,1fr) ; */
+    }
+
+    .skill-list,  .tool-list{
+        display: grid;
+        flex-wrap: wrap;
+
+        gap: 15px;
+        grid-template-columns: repeat(5,1fr);
+        margin-top: 50px;
+        justify-content: flex-end;
+    }
+
+    .section-title{
+        display: block;
+        font-size: 60px;
+    }
+
+    .section-text{
+        font-size: 25px;
+        font-weight: 800;
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    /* End skill Area */
+
+
+
+
+
+
+
+
+
+    .site-service{
+        padding: 7rem 2rem;
+        display: flex;
+        align-content: center;
+        width: 100%;
+
+
+    }
+
+    .site-service .services{
+
+        background:#C3BEF0;
+        padding: 2rem 0;
+        width: 300px;
+        height: 300px;
+        margin:auto;
+        box-shadow:10px 1px 7px 4px rgb(124, 120, 120);
+    }
+
+
+
+
+
+
+    .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .container {
+        height: 300px;
+        width: 300px;
+        padding: 15px;
+    }
+
+
+    .assi {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .card {
+        height: 300px;
+        width: 300px;
+        padding: 12px;
+        position: relative;
+        background: linear-gradient(#3A86FF 50%, #1e202b 50%) 0 100% no-repeat;
+        background-size: 100% 200%;
+        transition: 0.7s;
+        overflow: hidden;
+    }
+
+
+    .title
+    {
+        font-size: 40px;
+        padding-top: 6%;
+    }
+
+    .title-info
+    {
+        font-size: 13px;
+    }
+
+    .form
+    {
+        padding: 6% 4%;
+        padding-top: 15%;
+    }
+
+    .input-group, .textarea-group
+    {
+        padding: 3% 0;
+    }
+
+    input, textarea
+    {
+        font-size: 15px;
+    }
+
+    input:focus ~ label, input:not(:placeholder-shown) ~ label
+    {
+        top: -3.5em;
+        left: 0.1em;
+    }
+
+    textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label
+    {
+        top: -8.5em;
+        left: 0.2em;
+    }
+
+    button
+    {
+        font-size: 15px;
+    }
+
+
+
+    .widgetFooter:not(:nth-of-type(2)){
+        text-align: left;
+    }
+
+
+}
+
+
+@media all and (min-width: 1024px) and (max-width:1440px)
+{
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    * {
+        font-size: 25px;
+    }
+
+    /* start navbar Area */
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px;
+        position: fixed;
+        background: white;
+        box-shadow: 10px 1px 7px 4px rgb(124, 120, 120);
+        z-index: 3;
+        height: 60px;
+        top:0;
+
+    }
+
+    header li{
+        display: inline-block;
+        margin-left: 20px;
+        list-style: none;
+    }
+
+    header ul{
+        position: absolute;
+        right: 88px;
+        top: 0;
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    .links:hover{
+        position: relative;
+
+    }
+    .links:hover::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0.15rem;
+        left: 0;
+        top: 1rem;
+        background-color: #3A86FF;
+
+    }
+
+    header ul li:hover a, header ul li:hover {
+        cursor: pointer;
+        color: #3A86FF;
+    }
+
+    .navbar .logo img{
+        position: relative;
+        width: 50px;
+        margin-left: 50px;
+
+    }
+
+    /* end navbar Area */
+    /* start Banner Area */
+
+    /* start Banner Area */
+
+    #Home{
+        width: 100%;
+    }
+
+    .site-banner .banner-text{
+        z-index: 2;
+        position: absolute;
+        top: 150px;
+        left: 100px;
+        font-size: 30px;
+        align-content: center;
+    }
+
+    .site-banner .banner-img{
+        position:absolute;
+        display:flex;
+        right: 50px;
+        top: 100px;
+        margin: auto;
+    }
+    .banner-img{
+        height: 400px;
+    }
+
+    .titel-text{
+        margin-top: 40px;
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    .banner-text h1{
+        margin-bottom: 20px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 60px;
+
+    }
+
+    .main-content{
+        color: #3A86FF;
+    }
+
+    .banner-text .animated-info{
+        font-size: 35px;
+        font-weight: 800;
+    }
+
+    .social-icon{
+        margin-top: 30px;
+    }
+
+    /* End Banner Area */
+
+
+
+
+    /* start about Area */
+
+    #About{
+        display: inline-block;
+        align-content: center;
+        width: 100%;
+    }
+
+
+    .about-img{
+        position:absolute;
+        left: 50px;
+    }
+
+    .about-img img{
+        height: 400px;
+        justify-content: center;
+    }
+
+    .about-text h2{
+
+        font-size: 50px;
+        letter-spacing: 10px;
+    }
+
+    .about-text{
+        align-items: end;
+
+
+    }
+    .text-uppercase{
+        padding-top: 20px;
+        padding-left: 800px;
+        font-size: 55px;
+
+    }
+    .about-text .para{
+        padding-left: 800px;
+        font-size: 25px;
+        font-weight: 800;
+        text-align: justify;
+    }
+    .about-btn{
+        display: flex;
+        align-items: end;
+    }
+    .btn{
+        padding:auto;
+        width: 150px;
+        height: 50px;
+        border: 1px solid;
+        border-color: #212121;
+        border-radius: 5px;
+        font-family: inherit;
+        font-size: 18px;
+        background-color: black;
+        color: inherit;
+        box-shadow: 0 0 10px #212121;
+    }
+    .btn:hover
+    {
+        background-color:#3A86FF;
+        color: white;
+        border-color:#3A86FF ;
+        cursor: pointer;
+    }
+
+    /* End about Area */
+
+
+
+
+
+
+
+
+
+    /* start skill Area */
+    .site-skill {
+        margin-top: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .section-titel{
+
+        position: absolute;
+        font-size: 50px;
+        letter-spacing: 21px;
+        width: 20%;
+
+    }
+
+    .section-text{
+        width: 50%;
+    }
+
+    .skill-card {
+        position: relative;
+        background: hsl(0, 0%, 100%);
+        width: 80px;
+        height: 80px;
+        display: grid;
+        place-items: center;
+        border-radius: 12px;
+        box-shadow: 10px 10px 40px ;
+        list-style: none;
+
+    }
+
+    .skills-content{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .skills-content>h2{
+        /* position: absolute; */
+        left: 0;
+        margin-right: 20px;
+    }
+    .skills-content>p{
+        position: absolute;
+        top: 215px;
+        left: 0;
+    }
+
+    .skills-box{
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        /* grid-template-columns:repeat(5,1fr);
+        grid-template-columns:repeat(3,1fr) ; */
+    }
+
+    .skill-list,  .tool-list{
+        display: grid;
+        flex-wrap: wrap;
+
+        gap: 15px;
+        grid-template-columns: repeat(5,1fr);
+        margin-top: 50px;
+        justify-content: flex-end;
+    }
+
+    .section-title{
+        display: block;
+        font-size: 60px;
+    }
+
+    .section-text{
+        font-size: 25px;
+        font-weight: 800;
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    /* End skill Area */
+
+
+
+
+
+
+
+
+
+    .site-service{
+        padding: 7rem 2rem;
+        display: flex;
+        align-content: center;
+        width: 100%;
+
+
+    }
+
+    .site-service .services{
+
+        background:#C3BEF0;
+        padding: 2rem 0;
+        width: 300px;
+        height: 300px;
+        margin:auto;
+        box-shadow:10px 1px 7px 4px rgb(124, 120, 120);
+    }
+
+
+
+
+
+
+    .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .container {
+        height: 300px;
+        width: 300px;
+        padding: 15px;
+    }
+
+
+    .assi {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .card {
+        height: 300px;
+        width: 300px;
+        padding: 12px;
+        position: relative;
+        background: linear-gradient(#3A86FF 50%, #1e202b 50%) 0 100% no-repeat;
+        background-size: 100% 200%;
+        transition: 0.7s;
+        overflow: hidden;
+    }
+
+
+    .title
+    {
+        font-size: 40px;
+        padding-top: 6%;
+    }
+
+    .title-info
+    {
+        font-size: 13px;
+    }
+
+    .form
+    {
+        padding: 6% 4%;
+        padding-top: 15%;
+    }
+
+    .input-group, .textarea-group
+    {
+        padding: 3% 0;
+    }
+
+    input, textarea
+    {
+        font-size: 15px;
+    }
+
+    input:focus ~ label, input:not(:placeholder-shown) ~ label
+    {
+        top: -3.5em;
+        left: 0.1em;
+    }
+
+    textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label
+    {
+        top: -8.5em;
+        left: 0.2em;
+    }
+
+    button
+    {
+        font-size: 15px;
+    }
+
+
+
+    .widgetFooter:not(:nth-of-type(2)){
+        text-align: left;
+    }
+
+
+}
