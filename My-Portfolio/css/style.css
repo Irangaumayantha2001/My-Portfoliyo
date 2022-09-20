@@ -89,6 +89,9 @@ header ul li:hover a, header ul li:hover {
     margin-left: 50px;
 
 }
+header button{
+    display: none;
+}
 
 /* end header Area */
 
