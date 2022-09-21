@@ -713,12 +713,20 @@ div.footerCopy{
         font-size: 15px;
     }
 
-    html, body {
-        max-width: 100%;
+    html,body {
         overflow-x: hidden;
     }
 
+    body{
+        max-width: 98vw;
+    }
+
     /* start navbar Area */
+
+    header{
+        position: relative;
+        width: 98vw;
+    }
     .navbar{
         display: flex;
         align-items: center;
@@ -779,14 +787,16 @@ div.footerCopy{
     /* start Banner Area */
 
     #Home{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         width: 100%;
     }
 
     .site-banner .banner-text{
         z-index: 2;
         top: 200px;
-        left: 200px;
-        font-size: 30px;
+        left: 10px;
         align-content: center;
     }
 
@@ -798,19 +808,19 @@ div.footerCopy{
     }
 
     .banner-img img{
-        height: 400px;
+        height: 200px;
         align-items: center;
     }
     .titel-text{
-        margin-top: 300px;
-        font-size: 50px;
+        margin-top: 200px;
+        font-size: 20px;
         font-weight: 900;
     }
 
     .banner-text h1{
         margin-bottom: 20px;
         font-family: 'Ubuntu', sans-serif;
-        font-size: 40px;
+        font-size: 15px;
 
     }
 
@@ -836,6 +846,7 @@ div.footerCopy{
         display: inline-block;
         align-content: center;
         width: 100%;
+        height: max-content;
     }
 
 
@@ -845,20 +856,17 @@ div.footerCopy{
     }
 
     .about-img img{
-        height: 500px;
+        height: 200px;
         justify-content: center;
     }
 
     .about-text h2{
 
-        font-size: 60px;
-        letter-spacing: 21px;
+        font-size: 20px;
+        letter-spacing: 10px;
     }
 
-    .about-text{
 
-
-    }
     .text-uppercase{
         padding-top: 20px;
         padding-left: 800px;
@@ -907,16 +915,15 @@ div.footerCopy{
         margin-top: 200px;
         width: 100%;
         display: flex;
-        justify-content: space-around;
     }
 
 
     .section-titel{
 
         position: absolute;
-        font-size: 50px;
+        font-size: 20px;
         letter-spacing: 21px;
-        width: 20%;
+
 
     }
 
@@ -927,8 +934,8 @@ div.footerCopy{
     .skill-card {
         position: relative;
         background: hsl(0, 0%, 100%);
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
         display: grid;
         place-items: center;
         border-radius: 12px;
@@ -937,7 +944,10 @@ div.footerCopy{
 
     }
 
+
+
     .skills-content{
+        flex-direction: column;
         position: relative;
         display: flex;
         justify-content: center;
@@ -946,10 +956,11 @@ div.footerCopy{
         /* position: absolute; */
         left: 0;
         margin-right: 20px;
+        font-size: 40px;
     }
     .skills-content>p{
         position: absolute;
-        top: 100px;
+        top: 130px;
         left: 0;
     }
 
@@ -966,10 +977,10 @@ div.footerCopy{
     .skill-list,  .tool-list{
         display: grid;
         flex-wrap: wrap;
-
-        gap: 15px;
+        align-items: center;
+        gap: 10px;
         grid-template-columns: repeat(5,1fr);
-        margin-top: 50px;
+        margin-top: 330px;
         justify-content: flex-end;
     }
 
@@ -996,8 +1007,10 @@ div.footerCopy{
     }
 
     .site-service .services{
-
+        width: 90vw;
+        height: 90vw;
         margin-bottom: 2em;
+        align-items: center;
     }
 
 
@@ -1084,7 +1097,9 @@ div.footerCopy{
         text-align: left;
     }
 
-
+    .x-scroll-disabled {
+        overflow-x: hidden;
+    }
 }
 
 
@@ -1487,5 +1502,7 @@ div.footerCopy{
         text-align: left;
     }
 
-
+    .x-scroll-disabled {
+        overflow-x: hidden;
+    }
 }
