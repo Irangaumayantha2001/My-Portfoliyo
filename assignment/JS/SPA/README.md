@@ -15,7 +15,7 @@ MOCKUP:-//www.figma.com/file/LLrEa71M8IdET4nd6CDbHC/Pos-Sysytem?node-id=0%3A1
 
 ## Technologies
 
-HTML,CSS & Boostrap
+HTML,javascript & Boostrap
 
 ## Contributing
 
