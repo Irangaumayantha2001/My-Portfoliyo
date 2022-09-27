@@ -1,0 +1,41 @@
+h1{
+    margin-top: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+#calculator{
+    width: 35%;
+    margin-top: 10vh;
+}
+#display-cont{
+    width: 100%;
+    height: 4em;
+    padding: 0;
+}
+#display1{
+    height: 0.7rem;
+}
+#display{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0.7rem;
+    font-size: 2rem;
+}
+.col-3{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.col-6{
+    padding: 0;
+}
+button{
+    width: 98%;
+    margin-bottom: 0.2rem;
+}
+@media only screen and (max-width:680px){
+    #calculator{
+        width: 70% !important;
+    }
+}
