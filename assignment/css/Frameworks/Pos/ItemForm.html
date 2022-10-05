@@ -165,33 +165,38 @@
                   <div class="modal-body">
                     <form>
                       <div class="form-group">
-                        <label for="exampleInputEmail1">Item Name</label>
+                        <label for="itemCode">Item Code</label>
                         <input
-                          type="email"
+                          type="text"
                           class="form-control"
-                          id="exampleInputEmail"
-                          aria-describedby="emailHelp"
-                          placeholder="Item Name"
+                          id="itemCode"
+
                         />
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputEmail1">Item Price</label>
+                        <label for="itemName">Item Name</label>
                         <input
-                          type="email"
+                          type="text"
                           class="form-control"
-                          id="exampleInputEmail1"
-                          aria-describedby="emailHelp"
-                          placeholder="Item Price"
+                          id="itemName"
                         />
                       </div>
 
                       <div class="form-group">
-                        <label for="exampleInputPassword1">Quantity</label>
+                        <label for="itemQty"> Item Qty</label>
                         <input
-                          type="password"
+                          type="text"
                           class="form-control"
-                          id="exampleInputPassword1"
+                          id="itemQty"
                           placeholder="Quantity"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="itemPrice"> Item Price</label>
+                        <input
+                                type="text"
+                                class="form-control"
+                                id="itemPrice"
                         />
                       </div>
                     </form>
@@ -204,7 +209,7 @@
                     >
                       Close
                     </button>
-                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" id="btnItem" class="btn btn-primary">Save</button>
                   </div>
                 </div>
               </div>
@@ -218,12 +223,12 @@
           style="margin-top: 50px; text-align: left; display: block"
           class="ml-4"
         >
-          <button id="delBuCu" type="button" class="btn btn-danger">
+          <button id="btnItemDelete" type="button" class="btn btn-danger">
             Delete
           </button>
-          <button type="button" id="cusE" class="btn btn-warning">Edit</button>
-          <button type="button" id="cusD" class="btn btn-info">Details</button>
-          <button class="btn btn-success">Clear</button>
+          <button type="button" id="btnItemUpdate" class="btn btn-warning">Edit</button>
+          <button type="button" id="btnItemGetAll" class="btn btn-info">Details</button>
+          <button id="btn-clear" class="btn btn-success">Clear</button>
         </div>
       </div>
 
@@ -236,43 +241,12 @@
                 <tr>
                   <th scope="col">Item Code</th>
                   <th scope="col">Item Name</th>
-                  <th scope="col">Price</th>
-                  <th scope="col">Quntity</th>
-                  <th scope="col">Options</th>
+                  <th scope="col">Item Qty</th>
+                  <th scope="col">Item Price</th>
                 </tr>
               </thead>
-              <tbody class="">
-                <tr>
-                  <td>IT01</td>
-                  <td>Rice</td>
-                  <td>RS. 550/=</td>
-                  <td>10</td>
-                  <td class="d-flex justify-content-evenly">
-                    <i class="fa-solid fa-pencil fa-2x"></i>
-                    <i class="fa-solid fa-trash fa-2x"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>IT02</td>
-                  <td>soap</td>
-                  <td>RS. 230/=</td>
-                  <td>100</td>
-                  <td class="d-flex justify-content-evenly">
-                    <i class="fa-solid fa-pencil fa-2x"></i>
-                    <i class="fa-solid fa-trash fa-2x"></i>
-                  </td>
-                </tr>
+              <tbody id="tblItem">
 
-                <tr>
-                  <td>IT03</td>
-                  <td>choclate</td>
-                  <td>RS. 230/=</td>
-                  <td>1000</td>
-                  <td class="d-flex justify-content-evenly">
-                    <i class="fa-solid fa-pencil fa-2x"></i>
-                    <i class="fa-solid fa-trash fa-2x"></i>
-                  </td>
-                </tr>
               </tbody>
             </table>
           </div>
