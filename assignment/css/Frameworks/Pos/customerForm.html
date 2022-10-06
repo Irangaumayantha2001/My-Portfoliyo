@@ -210,7 +210,7 @@
                     >
                       Close
                     </button>
-                    <button type="button" id="btnCustomer" class="btn btn-primary" >
+                    <button type="button" id="btnSave" class="btn btn-primary" >
                       Save changes
                     </button>
                   </div>
@@ -258,5 +258,43 @@
     </div>
     <script src="assert/js/bootstrap.min.js"></script>
     <script src="assert/js/jquery-3.4.1.min.js"></script>
+  <script>
+    let customers=[];
+
+    $("#btnSave").click(function () {
+      saveCustomer();
+
+    });
+
+    function saveCustomer() {
+      let CustomerID = $("#txtCustomerID").val();
+      let CustomerName = $("#txtCustomerName").val();
+      let CustomerAddress = $("#txtCustomerAddress").val();
+      let CustomerSalary = $("#txtCustomerSalary").val();
+
+      let customer = {
+        id: CustomerID,
+        name: CustomerName,
+        address: CustomerAddress,
+        salary: CustomerSalary
+      };
+
+      customers.push(customer);
+
+      loadAllCustomers();
+
+    }
+    function loadAllCustomers() {
+
+      $("#tblCustomer > tbody").empty();
+
+      for (let customer of customers) {
+        $("#tblCustomer > tbody").append(
+                `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td>`
+        );
+      }
+    }
+
+  </script>
   </body>
 </html>
