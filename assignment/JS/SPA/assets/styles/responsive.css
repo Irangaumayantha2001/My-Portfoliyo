@@ -1,0 +1,189 @@
+@media screen and (max-width:768px){
+    header{
+        height: 50px;
+        justify-content: space-between;
+        padding: 0 28px;
+    }
+    .nav-link{
+        font-size: 1.9rem;
+    }
+
+    .header-toggle{
+        position: absolute;
+        display: block;
+        display: inline;
+        color: rgba(255, 255, 255, 0.933);
+        font-size: 78px;
+        position: absolute;
+
+
+    }
+    .header-close{
+        position: absolute;
+        right: 24px;
+        top: 30px;
+        display: block;
+        font-size: 50px;
+        border-radius: 50%;
+    }
+
+    .header-close:hover{
+        background-color: #00adb5;
+    }
+    .nav{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #222831;
+        color: #eeee;
+        width: 60%;
+        height: 100vh;
+        padding: 24px 0;
+        z-index: 100;
+        transition: 0.5s;
+        border-radius:  0 0 0 50%;
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-item{
+        margin: 0.1rem 0;
+    }
+    .show{
+        right: 0;
+    }
+
+}
+
+@media(max-width: 1024px){}
+
+
+@media all and (max-width: 1023px) and (min-width: 768px) {
+    /*---------------Dashboard Area---------------------------*/
+    .Dashboard-area {
+        width: 768px;
+        height: 100vh;
+    }
+
+    /*---------------Place Order Area---------------------------*/
+    .invoice-details {
+        position: relative;
+        left: 10px;
+        width: 737px;
+    }
+
+    .select-Item {
+        width: 737px;
+    }
+}
+
+    @media all and (max-width: 766px) and (min-width: 425px) {
+        .Dashboard-area {
+            width: 462px;
+            height: 1000px;
+        }
+        #storeName{
+
+            font-size: 57px;
+        }
+        .orderimg-area{
+            position: absolute;
+            top: 0px;
+        }
+        .orderimg-area>h3{
+            top: 192px;
+        }
+        .itemimg-area{
+            top: 246px;
+            position: absolute;
+
+        }
+        .itemimg-area>h3{
+            top: 192px;
+        }
+        .custimg-area{
+            top: 484px;
+            position: absolute;
+
+        }
+        .custimg-area>h3{
+            top: 192px;
+        }
+
+
+        /*---------------Place Order Area---------------------------*/
+        .invoice-details {
+            position: relative;
+            left: 42px;
+            width: 500px;
+        }
+
+        .select-Item {
+            width: 486px;
+        }
+        .addto-cart{
+            right: 30px;
+        }
+        .purchase{
+            left: 10px;
+            width: 486px;
+        }
+    }
+
+    @media all and (max-width: 424px) and (min-width: 375px) {
+        .Dashboard-area {
+            width: 462px;
+            height: 1000px;
+        }
+        #storeName{
+
+            font-size: 57px;
+        }
+        .orderimg-area{
+            position: absolute;
+            top: 0px;
+        }
+        .orderimg-area>h3{
+            top: 192px;
+        }
+        .itemimg-area{
+            top: 246px;
+            position: absolute;
+
+        }
+        .itemimg-area>h3{
+            top: 192px;
+        }
+        .custimg-area{
+            top: 484px;
+            position: absolute;
+
+        }
+        .custimg-area>h3{
+            top: 192px;
+        }
+
+
+        /*---------------Place Order Area---------------------------*/
+        .invoice-details {
+            position: relative;
+            left: 68px;
+            width: 500px;
+        }
+
+        .select-Item {
+            width: 486px;
+        }
+        .addto-cart{
+            right: 30px;
+        }
+        .purchase{
+            left: 10px;
+            width: 486px;
+        }
+    }
+
+    @media all and (max-width: 374px) and (min-width: 320px) {
+
+}
