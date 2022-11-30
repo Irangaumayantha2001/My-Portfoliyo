@@ -12,6 +12,8 @@ const themeSong = document.querySelector('.theme');
 var score = 0;
 var timerLeft = 15;
 var highscore = 0;
+var level = 2;
+
 
 window.onload = ()=>{
     if(localStorage.getItem('highscore')){
@@ -79,7 +81,30 @@ const scoreIncrease = ()=>{
     score += 1;
     scoreText.innerHTML = score;
     changePosition();
+    pass()
 }
+
+
+function pass() {
+    if(score>=5 &&  document.title == 'Game'){
+        window.location.href = 'level2.html';
+        level++;
+    }else if(score>=7 &&  document.title == 'Level 2'){
+        window.location.href = 'level3.html';
+        level++;
+    }else if(score>=10 &&  document.title == 'Level 3'){
+        window.location.href = 'level4.html';
+        level++;
+    }else if(score>=14 &&  document.title == 'Level 4'){
+        alert("You Won")
+    }else{
+        alert("You lost")
+    }
+}
+
+
+
+
 
 target.addEventListener('click', scoreIncrease);
 playGame.addEventListener('click', fadePage);
