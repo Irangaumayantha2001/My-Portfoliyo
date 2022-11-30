@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="assets/target.png"/>
+    <title>Level 2</title>
+    <style>
+        main{
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+<main class="main-page">
+    <div class="head-img">
+        <img src="assets/main-img.png" alt="gun-and-target-image">
+    </div>
+    <div class="game-text">
+        <h1>AIM SHOOTER</h1>
+    </div>
+</main>
+<audio src="./assets/Sounds/gunshot.mp3" class="gunshot" type="audio/mpeg"></audio>
+<audio src="./assets/Sounds/gameover.mp3" class="gameover" type="audio/mpeg"></audio>
+<audio src="./assets/Sounds/theme.mp3" class="theme" type="audio/mpeg"></audio>
+<div class="cursor">
+    <img src="assets/crosshair.png" alt="crosshair" draggable="false">
+</div>
+<div class="target">
+    <img src="assets/target.png" alt="target">
+</div>
+<div class="score">
+</div>
+<div class="timer">
+</div>
+<div class="highscore">
+    HighScore 0
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
